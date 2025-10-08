@@ -28,7 +28,7 @@ static_path = os.path.join(PATH, 'ClientApp')
 
 
 class HttpServer:
-    def __init__(self, host = '0.0.0.0', port = 2, qq_mod = False):
+    def __init__(self, host = '127.0.0.1', port = 2, qq_mod = False):
 
         self.web = Blueprint('web', __name__, static_folder=static_path)
 
