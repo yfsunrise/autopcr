@@ -126,10 +126,7 @@ class datamgr(BaseModel, Component[apiclient]):
         if not times:
             return 0
         times = max(times)
-<<<<<<< HEAD
         # return int(times)
-=======
->>>>>>> parent of 180df6c (Merge pull request #210 from cc004/dev)
         return int(times) // 2 # TODO delete // 2 when stop speed up
 
     def get_heart_piece_campaign_times(self) -> int:

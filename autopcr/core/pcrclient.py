@@ -50,7 +50,6 @@ class pcrclient(apiclient):
         await self.session.clear_session()
         self.need_refresh = False
 
-<<<<<<< HEAD
     async def clan_battle_top(self):
         if not self.data.clan:
             raise AbortError("未加入公会")
@@ -64,8 +63,6 @@ class pcrclient(apiclient):
         req = EmblemTopRequest()
         return await self.request(req)
 
-=======
->>>>>>> parent of 180df6c (Merge pull request #210 from cc004/dev)
     async def support_unit_get_setting(self):
         req = SupportUnitGetSettingRequest()
         return await self.request(req)
@@ -928,7 +925,7 @@ class pcrclient(apiclient):
     async def tower_cloister_battle_skip(self, times: int):
         req = CloisterBattleSkipRequest()
         req.skip_count = times
-        req.quest_id = db.tower_area[self.data.tower_status.cleared_floor_num].cloister_quest_id # TODO
+        req.quest_id = db.tower_area[self.data.tower_status.cleared_floor_num].cloister_quest_id
         req.current_ticket_num = self.data.get_inventory((eInventoryType.Item, 23001))
         return await self.request(req)
 
