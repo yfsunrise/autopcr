@@ -13,6 +13,7 @@ from ...core.apiclient import apiclient
 from ...model.error import *
 from ...db.database import db
 from ...model.enums import *
+from ...util.arena import instance as ArenaQuery
 import random
 import itertools
 from collections import Counter

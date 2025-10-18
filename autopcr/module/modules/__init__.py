@@ -102,6 +102,9 @@ daily_modules = ModuleList(
         # unit_equip_enhance_up,
         # unit_skill_level_up,
 
+        jjc_daily,
+        pjjc_daily,
+
         mission_receive_last,
         seasonpass_accept,
         seasonpass_reward,
@@ -215,5 +218,11 @@ tool_modules = ModuleList(
         remove_cb_ex_equip,
         remove_cb_support,
         redeem_unit_swap,
+        jjc_back,
+        pjjc_back,
+        jjc_info,
+        pjjc_info,
+        pjjc_def_shuffle_team,
+        pjjc_atk_shuffle_team,
     ]
 )
